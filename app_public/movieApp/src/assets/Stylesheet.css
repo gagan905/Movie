@@ -1,0 +1,29 @@
+body{
+  width: 90% !important;
+  margin: auto;
+}
+.bg-light{
+  background-color: #00a8e6 !important;
+}
+.navbar-light .navbar-nav .nav-link{
+  color: #ffffff !important;
+}
+.navbar-light .navbar-brand{
+  color: #ffffff !important;
+}
+.recipeImg{
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+}
+.
+.recipeDImg{
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+}
+.mainContainer{
+
+  padding-left:20px !important;
+  padding-right:20px !important;
+}

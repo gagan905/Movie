@@ -1,0 +1,28 @@
+<div class="row" >
+  <div class="col-md-4" *ngFor="let movie of movies" style="padding: 10px">
+    <a routerLink="/movie/{{movie._id}}">
+    <img class="movieImg" src='../../assets/images/{{movie.name}}.jpg' height="400" width="300"/>
+    </a>
+    <p> Name : {{movie.name}} </p>
+    <p>
+      Type : {{movie.type}}
+    </p>
+    <p>
+      Director : {{movie.director}}
+    </p>
+    <p>
+      Year : {{movie.year}}
+    </p>
+    <p>
+      Description : {{movie.description}}
+    </p>
+    <p>
+
+      Ratings : {{movie.rating}}
+    </p><div style="text-align: left;">
+<div class=" col-md-3 btn btn-success" routerLink="/movie/{{movie._id}}">View</div>
+    <div class="offset-md-1 col-md-3 btn btn-success" (click)="deleteMovie(movie._id)">Delete</div>
+  </div>
+  </div>
+
+</div>

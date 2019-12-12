@@ -1,0 +1,32 @@
+
+<div class="row" style="margin-top: 60px;">
+  <div class="offset-md-3 col-md-3">
+    <h1>
+      Name : {{newMovie.name}}
+
+    </h1>
+    <h4>
+      Type: {{newMovie.type}}
+    </h4>
+    <h4>
+      Description: {{newMovie.description}}
+    </h4>
+    <h4>
+      Director: {{newMovie.director}}
+    </h4>
+    <h4>
+      Year: {{newMovie.year}}
+    </h4>
+    <h4>
+      Ratings: {{newMovie.rating}}
+
+    </h4>
+    <br/>
+    <div class="col-md-3 btn btn-success" routerLink="/update/{{newMovie._id}}">Update</div>
+    <div class="offset-md-1 col-md-3 btn btn-success" (click)="deleteMovie(newMovie._id)">Delete</div>
+  </div>
+  <div class="col-md-6">
+    <img class="movieImg" src='assets/images/{{newMovie.name}}.jpg'/>
+  </div>
+
+</div>

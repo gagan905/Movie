@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= "Here is the list of Some movies"
+  ul
+    each movie in movies
+        li 
+            Strong movieName: #{movie.name}, Type: #{movie.type}

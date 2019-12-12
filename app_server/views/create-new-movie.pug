@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  h1=title
+  
+    form(method="POST" action="")
+      .form.row.control
+        label(for = "name") Name:&nbsp;
+        input#name.form-control(type="text", name="name")
+        br
+      .form.row.control
+        label(for = "type") Type:&nbsp;
+        input#type.form-control(type = "text", name = "type")
+        br
+        .form.row.control
+          label(for="director") Director:&nbsp;
+          input#director.form-control(type="text",  name="director")
+          br
+          .form.row.control
+            label(for="year") Year:&nbsp;
+            input#year.form-control(type="text",  name="year")
+            br
+            .form.row.control
+              label(for="description") Description:&nbsp;
+              input#description.form-control(type="text",  name="description")
+              br
+
+      .form.row.control
+        label(for="rating") Rating:&nbsp;
+        input#rating.form-control(type="text",  name="rating")
+        br
+        button.btn.primary Submit
